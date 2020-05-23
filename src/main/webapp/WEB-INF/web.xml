@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateServlet</servlet-name>
+        <url-pattern>/records/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadAllServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.ReadAllServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadAllServlet</servlet-name>
+        <url-pattern>/records/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadOneServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.ReadOneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadOneServlet</servlet-name>
+        <url-pattern>/records/read</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteOneServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.DeleteOneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOneServlet</servlet-name>
+        <url-pattern>/records/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateOneServlet</servlet-name>
+        <servlet-class>com.softserve.itacademy.servlets.UpdateOneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateOneServlet</servlet-name>
+        <url-pattern>/records/update</url-pattern>
+    </servlet-mapping>
+
+</web-app>
